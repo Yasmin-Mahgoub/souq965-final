@@ -788,6 +788,12 @@ button.searching-btn:hover > .searching-btn {
 .feature-category {
   margin-bottom: 50px;
 }
+.feature-category .tab-content .tab {
+  display: none;
+}
+.feature-category .tab-content .tab.active {
+  display: block;
+}
 /*productDetails*/
 .horizontal-flex {
   display: grid;
