@@ -6,10 +6,7 @@ window.onload = function () {
 
   const iconVisibility = () => {
     let scrollLeftValue = Math.ceil(tabMenu.scrollLeft);
-    console.log("1.", scrollLeftValue);
-
     let scrollableWidth = tabMenu.scrollWidth - tabMenu.clientWidth;
-    console.log("2.", scrollableWidth);
 
     btnLeft.style.display = scrollLeftValue > 0 ? "block" : "none";
     btnRight.style.display =
@@ -79,7 +76,7 @@ window.onload = function () {
     tabBtns.forEach((tabBtn) => {
       tabBtn.classList.remove("active");
     });
-
+    
     tabs.forEach((tab) => {
       tab.classList.remove("active");
     });
